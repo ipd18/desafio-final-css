@@ -11,15 +11,23 @@
 </head>
 
 <body>
+    
     <div class="grid-container">
         <header class="header box">
-            <nav>
-
+           <nav>
                 <div class="brand-container">
                     <div class="zoom-in-out-box">
-                        <img src="././assets/img/logo.avif" alt="" class="logoimg" />
-                    </div>
-                    <h3>TiendaLatam</h3>
+                    <svg height='150' width='300'>
+                        <defs> 
+                            <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>
+                                <stop offset='0%' style='stop-color:rgb(255,255,0);stop-opacity:1' />
+                                <stop offset='100%'' style=' stop-color:rgb(255,0,0);stop-opacity:1' />
+                            </linearGradient>
+                        </defs> 
+                        <ellipse cx='150' cy='75' rx='60' ry='40' fill='url(#grad1)'/>  
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="20">TiendaLatam</text>                    
+                    </svg>
+                </div>
                     <div class="icon">
                         <i class="fas fa-bars" style="color: white;"></i>
                     </div>
@@ -31,10 +39,13 @@
                     <li>Zapatillas</li>
                     <li>Envios</li>
                 </ul>
+                
             </nav>
         </header>
         <main class="main box">
+
             <section class="products-grid">
+                
                 <div class="product item1">
                     <div>
                         <img class="product-img" src="././assets/img/nike blaco negro.avif" alt="" />
